@@ -1,12 +1,7 @@
 # Jeffery Qiu — Portfolio Website
 
-Live site: [add your GitHub Pages URL once deployed]
+Live site: https://github.com/YofyMan/portfolio-website
 
-## Project Overview
-<!-- What is this site, and why did you build it? -->
-
-## Target Audience
-<!-- Who is this site for? (employers, clients, peers) -->
 
 ## Content Strategy
 
@@ -21,13 +16,11 @@ Live site: [add your GitHub Pages URL once deployed]
 7. Pages included: Home, About, Projects, Contact
 8. Career goal / desired role: My career goal is to become a SWE and be financially stable after I graduate.
 9. Technologies/tools with experience: I have experience with video editing and vscode (java preferred language)
-10. Achievements or experiences worth highlighting:
-11. Call-to-action for visitors: View projects
+10. Achievements or experiences worth highlighting: Developed multiple academic and personal projects using Java, Python, HTML, CSS, and JavaScript, while continuously expanding my skills in software and web development.
+11. Call-to-action for visitors: View my projects and feel free to contact me with any questions or opportunities
 12. Resume included? Format: No, I am currently refining my resume so it is not added yet.
-13. Social/professional links: Github
+13. Social/professional links: [Github](https://github.com/YofyMan)
 
-## Information Organization
-<!-- Site map / how pages and sections relate to each other -->
 
 ## Visual Design
 
@@ -46,8 +39,6 @@ Live site: [add your GitHub Pages URL once deployed]
 11. Icons/images/illustrations used, and why: I included technology icons to visually represent the tools used in each project.
 12. Design inspiration (sites/links): My design was inspired by modern developer portfolios that emphasize simplicity, readability, and responsive design.
 
-### Wireframe
-<!-- Insert a photo of your hand-drawn wireframe, or an image/description of a computer-aided one -->
 
 ## Interaction / Functionality
 
@@ -67,14 +58,6 @@ Live site: [add your GitHub Pages URL once deployed]
   - `style.css` — styling and responsive layout
   - `script.js` — nav toggle, form validation, scroll highlighting
 
-## Timeline / Milestones
-- [ ] Content answers written
-- [ ] Wireframe sketched
-- [ ] HTML structure customized
-- [ ] CSS styled and responsive
-- [ ] JS interactivity tested
-- [ ] Pushed to GitHub + Pages deployed
-- [ ] Submitted on Brightspace
 
 ## External Resources Used
 External Resources
@@ -90,5 +73,11 @@ External Resources
 
 • W3Schools – HTML, CSS, and JavaScript references
   https://www.w3schools.com/
-# portfolio-website
-Portfolio
+  
+## Timeline / Project Milestones
+
+- ✅ Week 1 – Planned the portfolio layout and gathered design inspiration.
+- ✅ Week 1 – Created the HTML structure for the homepage, About, Projects, Skills, and Contact sections.
+- ✅ Week 2 – Styled the website using CSS, including responsive layouts, hover effects, and dark mode.
+- ✅ Week 2 – Added JavaScript features such as form validation, character counter, copy email button, and scroll highlighting.
+- ✅ Week 2 – Tested responsiveness, fixed bugs, commented the code, and deployed the website using GitHub Pages.

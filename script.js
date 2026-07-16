@@ -1,7 +1,5 @@
-// ================================
-// Character Counter
-// ================================
 
+// Character Counter
 // Get the message textbox and counter
 const messageBox = document.getElementById("message");
 const charCount = document.getElementById("charCount");
@@ -15,6 +13,7 @@ messageBox.addEventListener("input", () => {
 
 });
 
+// Contact form fields required to fill in and final button click
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function(event){
