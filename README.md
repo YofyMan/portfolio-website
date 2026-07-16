@@ -2,6 +2,17 @@
 
 Live site: https://github.com/YofyMan/portfolio-website
 
+## Project Overview
+
+This project is a responsive personal portfolio website created from scratch using HTML, CSS, and JavaScript. Its purpose is to introduce me, showcase my technical and creative skills, display projects I have developed, and provide visitors with a way to contact me.
+
+## Target Audience
+
+The primary audience includes peers, employers, recruiters, and developers who want to learn more about my background, skills, and projects.
+
+## Information Organization
+
+The website uses a single-page layout divided into a hero section, About section, Skills section, Projects section, and Contact section. Navigation links allow users to move directly to each major section.
 
 ## Content Strategy
 
@@ -11,11 +22,11 @@ Live site: https://github.com/YofyMan/portfolio-website
 2. Purpose of the site: Show off projects/work I've done and let people know about me
 3. Target audience: Peers
 4. Skills to highlight: Coding, Video editing
-5. Projects to showcase: Discord Ticket Bot, Portfolio Website, Heart Disease Risk Predicton.
+5. Projects to showcase: Discord Ticket Bot, Portfolio Website, Heart Disease Risk Predictor
 6. Short professional bio: I am a Computer Science student interested in software development, web development, and artificial intelligence. I enjoy creating projects that help me grow as a programmer while expanding my technical skills.
 7. Pages included: Home, About, Projects, Contact
 8. Career goal / desired role: My career goal is to become a SWE and be financially stable after I graduate.
-9. Technologies/tools with experience: I have experience with video editing and vscode (java preferred language)
+9. Technologies/tools with experience: I have experience with video editing, VS Code, Java, Python, HTML, CSS, JavaScript, SQL, Photoshop, Premiere Pro, and After Effects.
 10. Achievements or experiences worth highlighting: Developed multiple academic and personal projects using Java, Python, HTML, CSS, and JavaScript, while continuously expanding my skills in software and web development.
 11. Call-to-action for visitors: View my projects and feel free to contact me with any questions or opportunities
 12. Resume included? Format: No, I am currently refining my resume so it is not added yet.
@@ -27,7 +38,7 @@ Live site: https://github.com/YofyMan/portfolio-website
 **Part 2 Questions & Answers**
 
 1. Overall style: Minimalist
-2. Color scheme (and why): Blue & White & Black, since they go well with eachother and blue is my favorite color.
+2. Color scheme (and why): Blue, white, and black because they work well together and create a clean, professional appearance.
 3. Fonts (heading / body): Space Grotesk for headings, Inter for body text, and JetBrains Mono for labels, buttons, and coding-style elements
 4. How design reflects personality/field: My portfolio uses a clean, modern, and professional design that reflects my interest in computer science and software development. I chose a minimalist layout with consistent colors and typography to keep the focus on my projects and technical skills while maintaining an organized appearance.
 5. Homepage layout: The homepage begins with a hero section that introduces me and my career goals, followed by sections for my background, skills, featured projects, and contact information.
@@ -58,6 +69,9 @@ Live site: https://github.com/YofyMan/portfolio-website
   - `style.css` — styling and responsive layout
   - `script.js` — nav toggle, form validation, scroll highlighting
 
+## Wireframe
+
+The website layout was inspired by modern developer portfolio websites as references. Rather than following a formal wireframe, I iteratively refined the design based on usability and visual consistency.
 
 ## External Resources Used
 
