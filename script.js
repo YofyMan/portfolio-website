@@ -36,6 +36,7 @@ form.addEventListener("submit", function(event){
     output.style.color = "green";
 
     form.reset();
+    charCount.textContent = "0 / 300 characters";
 
 });
 

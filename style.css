@@ -3,7 +3,7 @@
     --bg: hwb(197 19% 25%);
     --text: #1a1a1a;
     --muted: #1a1a1a;
-    --accent: #2f6f4f;
+    --accent: #1a1a1a;
     --border: #e4e4e0;
     --card: #f2f2ee;
   }
@@ -268,7 +268,7 @@
 
     --border:#3b3b3b;
 
-    --accent:#58a6ff;
+    --accent:#f5f5f5;
     }
 
     /* Styles the light and dark mode toggle button. */
