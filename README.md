@@ -1,6 +1,6 @@
 # Jeffery Qiu — Portfolio Website
 
-Live site: https://github.com/YofyMan/portfolio-website
+Live site: https://yofyman.github.io/portfolio-website/
 
 ## Project Overview
 
