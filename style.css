@@ -1,0 +1,354 @@
+  /* Reusable color variables for the default light theme. */
+  :root {
+    --bg: hwb(197 19% 25%);
+    --text: #1a1a1a;
+    --muted: #1a1a1a;
+    --accent: #2f6f4f;
+    --border: #e4e4e0;
+    --card: #f2f2ee;
+  }
+
+  html{
+        scroll-behavior:smooth;
+  }
+  /* Makes element widths include their padding and borders. */
+  * { box-sizing: border-box; }
+
+  /* Global page styling, including the main font, colors, and line spacing. */
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Centers page content and limits its maximum width for readability. */
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* Gives the main header the same background color as cards. */
+  .main_header {
+    background: var(--card);
+  }
+
+    /* Keeps the header visible while scrolling and adds a subtle divider. */
+    header {
+        position: sticky;
+        top: 0;
+        background: var(--card);
+        backdrop-filter: blur(6px);
+        z-index: 1000;
+        border-bottom: 1px solid var(--border);
+    }
+
+  /* Arranges the logo, navigation links, and theme button in one row. */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 0; }
+
+  /* Styles the owner's name displayed in the navigation bar. */
+  .logo { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.95rem; }
+
+  /* Removes list styling and places navigation links side by side. */
+  .navlinks { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; }
+
+  /* Styles navigation links using the muted text color. */
+  .navlinks a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+
+  /* Highlights the navigation link for the section currently being viewed */
+    .navlinks a.active {
+        color: var(--accent);
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent);
+    }
+  /* Changes navigation link color when the mouse hovers over it. */
+  .navlinks a:hover { color: var(--accent); }
+
+  /* Adds large vertical spacing around the introduction section. */
+  .hero { padding: 6rem 0 4rem; }
+
+  /* Main page heading uses responsive sizing that adjusts to screen width. */
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 0.5rem;
+  }
+
+  /* Styles the professional role displayed under the main heading. */
+  .role { color: var(--muted); font-size: 1.05rem; margin: 0 0 1.75rem; }
+
+  /* Reusable call-to-action button and link styling. */
+  .cta {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.6rem 1.1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  /* Fills call-to-action elements with the accent color on hover. */
+  .cta:hover { background: var(--accent); color: #fff; }
+
+  /* Adds spacing and a top divider to each major section. */
+  section { padding: 3.5rem 0; border-top: 1px solid var(--border); }
+
+  /* Styles the numbered label shown above each section heading. */
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent);
+    font-size: 0.82rem;
+    margin: 0 0 1.25rem;
+  }
+
+
+  /* Styles all secondary section headings. */
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+  }
+
+  /* Limits paragraph width for easier reading. */
+  p.body-text { color: var(--text); max-width: 60ch; }
+
+  /* General tag container that supports wrapping onto additional lines. */
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
+
+  /* Styles individual general-purpose tags. */
+  .tags span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: var(--card);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+  }
+
+  /* Arranges each project's title, description, and link vertically. */
+  .project {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  /* Prevents an unnecessary bottom border on the final project entry. */
+  .project:last-child { border-bottom: none; }
+
+  /* Styles project titles. */
+  .project h3 { margin: 0; font-size: 1.1rem; font-family: 'Space Grotesk', sans-serif; }
+
+  /* Styles project descriptions with smaller muted text. */
+  .project p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+  /* Styles project links using the accent color. */
+  .project a { color: var(--accent); font-size: 0.85rem; text-decoration: none; }
+
+  /* Underlines project links when hovered. */
+  .project a:hover { text-decoration: underline; }
+
+
+  /* Creates a responsive grid for skill cards when the class is used in HTML. */
+  .skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;
+    margin-top:2rem;
+    }
+
+    /* Gives each skill category a card background, border, and spacing. */
+    .skill-card{
+        background:var(--card);
+        border:1px solid var(--border);
+        border-radius:8px;
+        padding:1.25rem;
+        transition:1s;
+    }
+
+    /* Raises the skill card and adds a shadow when hovered. */
+    .skill-card:hover{
+        transform:translateY(-3px);
+        box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Styles the heading inside each skill card. */
+    .skill-card h3{
+        margin-top:0;
+        margin-bottom:0.8rem;
+        font-family:'Space Grotesk', sans-serif;
+        color:var(--accent);
+    }
+
+    /* Removes default list styling from any lists placed inside skill cards. */
+    .skill-card ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+
+    /* Adds vertical spacing to list items inside skill cards. */
+    .skill-card li{
+        margin:0.4rem 0;
+    }
+
+    /* Arranges skill tags in a flexible row that wraps when needed. */
+    .skill-tags{
+        display:flex;
+        flex-wrap:wrap;
+        gap:0.5rem;
+    }
+
+    /* Styles each skill as a rounded pill badge. */
+    .skill-tags span{
+        background:var(--card);
+        border:1px solid var(--border);
+        border-radius:999px; /* makes it pill-shaped */
+        padding:0.35rem 0.8rem;
+        font-size:0.8rem;
+        font-family:'JetBrains Mono', monospace;
+        transition:0.3s;
+    }
+
+    /* Highlights skill pills and raises them slightly when hovered. */
+    .skill-tags span:hover{
+        background:var(--accent);
+        color:white;
+        transform:translateY(-2px);
+    }
+
+    /* Stacks contact form controls vertically with consistent spacing. */
+    #contactForm{
+        display:flex;
+        flex-direction:column;
+        gap:1rem;
+        max-width:600px;
+    }
+
+    /* Applies matching typography, borders, and padding to form controls. */
+    #contactForm input,
+    #contactForm textarea{
+
+        padding:12px;
+
+        border:1px solid var(--border);
+
+        border-radius:6px;
+
+        font-size:16px;
+
+        font-family:Inter,sans-serif;
+    }
+
+    /* Makes contact form feedback more noticeable. */
+    #formMessage{
+        font-weight:bold;
+    }
+
+    /* Styles the temporary message displayed after copying the email. */
+    #copyMessage{
+    margin-top:1rem;
+    color:var(--text);
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.9rem;
+    }
+
+/* Dark Mode Toggle */
+    /* Replaces the default color variables when dark mode is active. */
+    .dark-mode{
+
+    --bg:#121212;
+
+    --text:#f5f5f5;
+
+    --muted:#d4d4d4;
+
+    --card:#1f1f1f;
+
+    --border:#3b3b3b;
+
+    --accent:#58a6ff;
+    }
+
+    /* Styles the light and dark mode toggle button. */
+    .theme-btn{
+
+        background:none;
+
+        border:1px solid var(--border);
+
+        border-radius:6px;
+
+        padding:8px 12px;
+
+        cursor:pointer;
+
+        font-size:18px;
+
+        transition:.3s;
+    }
+
+    /* Adds a card-colored background when the theme button is hovered. */
+    .theme-btn:hover{
+
+        background:var(--card);
+    }
+
+/* Mobile devices */
+/* Changes layout and spacing for screens 768 pixels wide or smaller. */
+@media (max-width: 768px) {
+
+    /* Reduces horizontal page padding on smaller screens. */
+    .wrap{
+        padding:0 1rem;
+    }
+
+    /* Stacks navigation content vertically on mobile devices. */
+    nav{
+        flex-direction:column;
+        gap:1rem;
+        text-align:center;
+    }
+
+    /* Stacks navigation links vertically and reduces their spacing. */
+    .navlinks{
+        flex-direction:column;
+        gap:0.75rem;
+    }
+
+    /* Reduces hero spacing and centers its text on mobile. */
+    .hero{
+        padding:4rem 0 3rem;
+        text-align:center;
+    }
+
+    /* Reduces section spacing on smaller screens. */
+    section{
+        padding:2.5rem 0;
+    }
+
+    /* Reduces project spacing on smaller screens. */
+    .project{
+        padding:1rem 0;
+    }
+
+    /* Displays the skill grid as one column on mobile. */
+    .skill-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Keeps call-to-action elements inline while adding top spacing. */
+    .cta{
+        display:inline-block;
+        margin-top:1rem;
+    }
+
+    /* Centers footer text on smaller screens. */
+    footer{
+        text-align:center;
+    }
+}
+
+  /* Styles the footer with muted monospaced text and vertical spacing. */
+  footer { padding: 2.5rem 0; color: var(--muted); font-size: 0.85rem; font-family: 'JetBrains Mono', monospace; }

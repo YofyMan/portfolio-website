@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffery Qiu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Imports Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky website header containing the logo, navigation links, and theme button. -->
+  <header class="main_header">
+    <div class="wrap">
+      <nav>
+        <!-- Displays the website owner's name as the portfolio logo. -->
+        <span class="logo">Jeffery Qiu</span>
+
+        <!-- Navigation links move the user to sections on the same page. -->
+        <ul class="navlinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- JavaScript uses this button to switch between light and dark mode. -->
+        <button id="themeToggle" class="theme-btn">
+            🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main page content is kept inside the reusable wrap container. -->
+  <main class="wrap">
+
+    <!-- Hero section introduces the portfolio owner and career goal. -->
+    <section class="hero">
+      <h1>Jeffery Qiu</h1>
+      <p class="role">Computer Science Student • Java Developer • Aspiring Full Stack Engineer</p>
+
+      <!-- Call-to-action link scrolls directly to the projects section. -->
+      <a href="#project" class="cta">Projects</a>
+    </section>
+
+
+
+    <!-- About section contains the professional biography and skill categories. -->
+    <section id="about">
+      <p class="label">1. About</p>
+      <h2>About Me</h2>
+
+      <!-- Short introduction describing the owner's background and interests. -->
+      <p class="body-text">
+        My name is Jeffery Qiu, I am 23 years and I am an aspiring CS student that will be graduating this semester. 
+        I mainly code in java but know the basics of python and a little bit of SQL. In my free time I tend to play
+        video games and chat with friends. I like to listen to music a lot and my main genres are usually Pop, Rap, Phonk,
+        Edm, K-Pop, and J-Pop.
+      </p>
+
+      <h2>Skills</h2>
+
+      <!-- Additional description of creative tools and current learning goals. -->
+      <p>
+        I like to sometimes spend my freetime and do video editing. I've worked in spaces like premiere pro and after effects. I've dabbled into photoshop and know the basics on photo editing.
+        I am currently learning and taking courses in LLM's (Language Learning Machines) and refreshing my knowledge on web development, mainily dabbling more with JS.
+      </p>
+
+    <!-- Responsive grid container that holds all skill cards -->
+    <div class="skill-grid">
+
+        <!-- Programming skills card -->
+        <div class="skill-card">
+            <h3>Programming</h3>
+
+            <div class="skill-tags">
+                <span>☕ Java</span>
+                <span>🐍 Python</span>
+                <span>🟨 JavaScript</span>
+            </div>
+        </div>
+
+        <!-- Web development skills card -->
+        <div class="skill-card">
+            <h3>Web Development</h3>
+
+            <div class="skill-tags">
+                <span>🌐 HTML</span>
+                <span>🎨 CSS</span>
+                <span>Responsive Design</span>
+            </div>
+        </div>
+
+        <!-- Tools and software skills card -->
+        <div class="skill-card">
+            <h3>Tools</h3>
+
+            <div class="skill-tags">
+                <span>🛠 Git</span>
+                <span>🖥 VS Code</span>
+                <span>🖼 Photoshop</span>
+                <span>🎬 Premiere Pro</span>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Projects section showcases selected work. -->
+    <section id="project">
+      <p class="label">2. Projects</p>
+      <h2>Selected projects</h2>
+
+      <!-- First project entry with a Discord icon. -->
+      <div class="project">
+        <h3>Discord Ticket Bot
+            <img src="discord_symbol.png" alt="Discord" width="15" height="15" style="cursor: default;">
+        </h3>
+        <p>
+            A discord bot that can create support tickets as well as having an event signup where people can select certain roles and whether they will be present or not (WIP).
+            It is currently being expanded with moderation commands and additional event management features. The bot is coded using Java.
+        </p>
+      </div>
+
+      <!-- Second project entry with icons showing the technologies used. -->
+      <div class="project">
+        <h3>Portfolio Website
+            <img src="html_logo.png" alt="HTML" width="15" height="15" style="cursor: default;">
+            <img src="css_logo.png" alt="CSS" width="15" height="15" style="cursor: default;">
+            <img src="JavaScript_Logo.png" alt="JS" width="15" height="15" style="cursor: default;">
+        </h3>
+        <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and career goals. 
+            Implemented interactive features including a dark mode toggle with saved preferences, a contact form with input validation, and dynamic user feedback to improve the user experience. 
+            Focused on creating a clean, professional, and mobile-friendly design while applying modern web development and accessibility best practices.</p>
+      </div>
+
+      <!-- Third project placeholder with a link for viewing the project. -->
+      <div class="project">
+        <h3>Project Three</h3>
+        <p>One line describing what it does and the problem it solves.</p>
+        <a href="#">view project →</a>
+      </div>
+    </section>
+
+
+<!-- Contact section includes a form and a button that copies the email address. -->
+<section id="contact">
+    <p class="label">3. Contact</p>
+    <h2>Contact Me</h2>
+
+    <!-- JavaScript validates this contact form and displays feedback to the user. -->
+    <form id="contactForm">
+        <!-- Required text input for the visitor's name. -->
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <!-- Required email input that uses built-in browser email validation. -->
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <!-- Required multi-line input for the visitor's message. -->
+        <textarea
+            id="message"
+            placeholder="Message"
+            rows="5"
+            maxlength="300"
+            required
+        ></textarea>
+
+        <p id="charCount">0 / 300 characters</p>
+
+        <!-- Submits the form and triggers the JavaScript submit event. -->
+        <button type="submit" class="cta">
+            Send Message
+        </button>
+
+        <!-- JavaScript places form validation or success feedback here. -->
+        <p id="formMessage"></p>
+    </form>
+
+    <p class="body-text">
+        Click below to copy my email and contact me if needed!
+    </p>
+
+    <!-- JavaScript copies the portfolio owner's email address to the clipboard. -->
+    <button id="copyEmail" class="cta">
+        📧 Copy My Email
+    </button>
+
+    <!-- Temporary confirmation message appears here after the email is copied. -->
+    <p id="copyMessage"></p>
+</section>
+
+  </main>
+
+  <!-- Footer displays copyright information and the technologies used. -->
+  <footer class="wrap">© 2026 Jeffery Qiu — built with HTML, CSS, JS</footer>
+
+</body>
+
+<script src="script.js"></script>
+</html>
